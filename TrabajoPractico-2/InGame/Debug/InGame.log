@@ -1,0 +1,3 @@
+﻿  Game.cpp
+d:\programacion de graficos i\proggraf1-tp2-abecasis\trabajopractico-2\ingame\game.cpp(2): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+  InGame.vcxproj -> D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\Debug\InGame.exe
