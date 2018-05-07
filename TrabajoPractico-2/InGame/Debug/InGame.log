@@ -1,15 +1,1 @@
-﻿  Game.cpp
-d:\programacion de graficos i\proggraf1-tp2-abecasis\trabajopractico-2\ingame\game.cpp(10): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
-  InGame.vcxproj -> D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\Debug\InGame.exe
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\openal32.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-audio-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-audio-d-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-graphics-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-graphics-d-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-network-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-network-d-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-system-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-system-d-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-window-2.dll
-  D:\Programacion de Graficos I\ProgGraf1-TP2-Abecasis\TrabajoPractico-2\SFML\x86\SFML-2.4.2\bin\sfml-window-d-2.dll
-         11 archivo(s) copiado(s).
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Platforms\Win32\PlatformToolsets\v141\Toolset.targets(34,5): error MSB8036: No se encontró la versión del SDK de Windows 10.0.16299.0. Instale la versión requerida del SDK de Windows o cambie la versión del SDK en las páginas de propiedades de proyecto o haciendo clic con el botón derecho en la solución y seleccionando "Redestinar solución".

@@ -8,7 +8,10 @@
 
 void main() 
 {
-	sf::RenderWindow window(sf::VideoMode(640, 480), "Game's Working");
+	int windowWidth = 640;
+	int windowHeight = 480;
+
+	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Game's Working");
 
 	sf::Texture texture;
 	texture.loadFromFile("player.png");
@@ -26,9 +29,38 @@ void main()
 				window.close();
 				break;
 
+			case sf::Event::KeyPressed:
+				switch (event.key.code)
+				{
+				case sf::Keyboard::Up:
+					spritePlayer.move(0, -2);
+					break;
+
+				case sf::Keyboard::Down:
+					spritePlayer.move(0, 2);
+					break;
+
+				case sf::Keyboard::Right:
+					spritePlayer.move(0, 2);
+					break;
+
+				case sf::Keyboard::Left:
+					spritePlayer.move(0, -2);
+					break;
+
+				case sf::Keyboard::Escape:
+					window.close();
+					break;
 				default:
 					break;
+				}
+
+				break;
+
+			default:
+				break;
 			}
+			
 		}
 
 		window.clear();
