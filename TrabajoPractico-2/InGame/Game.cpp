@@ -14,10 +14,19 @@ void main()
 
 	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Game's Working");
 
-	sf::Texture texture;
-	texture.loadFromFile("player.png");
+	// Player
+	sf::Texture texturePlayer;
+	texturePlayer.loadFromFile("player.png");
 	sf::Sprite spritePlayer;
-	spritePlayer.setTexture(texture);
+	spritePlayer.setTexture(texturePlayer);
+	spritePlayer.move(10, 10);
+
+	// Coin
+	sf::Texture textureCoin;
+	textureCoin.loadFromFile("coin.png");
+	sf::Sprite spriteCoin;
+	spriteCoin.setTexture(textureCoin);
+	spriteCoin.move(600, 400);
 
 	sf::Clock deltaClock;
 
@@ -55,6 +64,7 @@ void main()
 				case sf::Keyboard::Escape:
 					window.close();
 					break;
+
 				default:
 					break;
 				}
@@ -68,6 +78,7 @@ void main()
 
 		window.clear();
 		window.draw(spritePlayer);
+		window.draw(spriteCoin);
 		window.display();
 	}
 }
