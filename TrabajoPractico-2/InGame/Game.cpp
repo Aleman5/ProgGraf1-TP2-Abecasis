@@ -10,6 +10,7 @@ void main()
 {
 	int windowWidth = 640;
 	int windowHeight = 480;
+	int speed = 10000;
 
 	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Game's Working");
 
@@ -18,10 +19,13 @@ void main()
 	sf::Sprite spritePlayer;
 	spritePlayer.setTexture(texture);
 
+	sf::Clock deltaClock;
+
 	while (window.isOpen())
 	{
 		sf::Event event;
-		
+		sf::Time dt = deltaClock.restart();
+
 		if (window.pollEvent(event)) {
 			switch (event.type)
 			{
@@ -33,19 +37,19 @@ void main()
 				switch (event.key.code)
 				{
 				case sf::Keyboard::Up:
-					spritePlayer.move(0, -2);
+					spritePlayer.move(0, -speed * dt.asSeconds());
 					break;
 
 				case sf::Keyboard::Down:
-					spritePlayer.move(0, 2);
+					spritePlayer.move(0, speed * dt.asSeconds());
 					break;
 
 				case sf::Keyboard::Right:
-					spritePlayer.move(0, 2);
+					spritePlayer.move(speed * dt.asSeconds(), 0);
 					break;
 
 				case sf::Keyboard::Left:
-					spritePlayer.move(0, -2);
+					spritePlayer.move(-speed * dt.asSeconds(), 0);
 					break;
 
 				case sf::Keyboard::Escape:
@@ -54,7 +58,6 @@ void main()
 				default:
 					break;
 				}
-
 				break;
 
 			default:
