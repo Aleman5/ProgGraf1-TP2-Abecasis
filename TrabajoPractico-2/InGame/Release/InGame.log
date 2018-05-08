@@ -1,7 +1,7 @@
 ﻿  Game.cpp
 k:\programacion de graficos i\proggraf1-tp2-abecasis\trabajopractico-2\ingame\game.cpp(10): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
   Generando código
-  83 of 83 functions (100.0%) were compiled.
+  9 of 83 functions (10.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
